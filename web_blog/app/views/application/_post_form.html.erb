@@ -1,0 +1,12 @@
+<%= form_for(@post) do |f| %>
+        
+	<%= f.text_field :title, :placeholder => "Title" %>
+	<%= f.text_area :content, :placeholder => "Content" %>
+	<%= f.password_field :password, :placeholder => "Password" %>
+	<% if @post == nil %>
+		<%= f.submit "Create", class: "btn btn-danger btn-lg" %>
+	<% else %>
+		<%= f.submit "Save", class: "btn btn-danger btn-lg" %>
+	<% end %>
+      
+<% end %>
