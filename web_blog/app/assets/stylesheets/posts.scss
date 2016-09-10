@@ -22,3 +22,16 @@ a:hover {
 strong {
 	color: #333;
 }
+
+.jumbotron {
+	align-items: center;
+	background-image: image-url("dionaea_trap.jpg");
+	background-position: right;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	color: white;
+	text-shadow: 2px 2px 8px #1D042A;
+	text-align: center;
+	margin-bottom: 0px;
+}
