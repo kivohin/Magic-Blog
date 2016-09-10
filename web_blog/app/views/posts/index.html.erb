@@ -7,10 +7,10 @@
       </div>
 
       <div>
-        <p class="lead"><%= link_to raw(post.content).truncate(358), post_path(post) %></p>
+        <p class="lead"><%= link_to raw(post.content).truncate(300), post_path(post) %></p>
       </div>
 
-      <div class="text-center">
+      <div class="text-center post-author-time">
         <p>Posted by <strong><%= post.username %></strong> on <%= post.created_at.strftime('%b %d, %Y') %></p>
       </div>
       <hr>
