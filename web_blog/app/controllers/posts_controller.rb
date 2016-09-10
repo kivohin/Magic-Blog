@@ -7,6 +7,7 @@ class PostsController < ApplicationController
 
 	def new
 		@post = Post.new
+		@unique_id = SecureRandom.uuid
 	end
 
 	def create
