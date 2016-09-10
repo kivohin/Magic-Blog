@@ -2,7 +2,8 @@
         
 	<%= f.text_field :title, :placeholder => "Title" %>
 	<%= f.text_area :content, :placeholder => "Content" %>
-	<% if @post == nil %>
+	
+	<% if @post.id == nil %>
 		<%= f.submit "Create", class: "btn btn-danger btn-lg" %>
 		<%= f.hidden_field :unique_id, :value => @unique_id %>
 	<% else %>
