@@ -19,7 +19,7 @@
       <ul class="nav navbar-nav navbar-right">
         <% if current_user %>
           <li class="navbar-text"><%= current_user.email %></li>
-          <a href="posts/new"><button type="button" class="btn btn-success navbar-btn">Create post</button></a>
+          <a href="/posts/new"><button type="button" class="btn btn-success navbar-btn">Create post</button></a>
           <a href="logout" data-method="delete"><button type="button" class="btn btn-danger navbar-btn">Log out</button></a>
         <% else %>
           <a href="login"><button type="button" class="btn btn-primary navbar-btn">Log in</button></a>

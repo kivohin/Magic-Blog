@@ -11,12 +11,11 @@ a:hover {
 	text-decoration: none;
 }
 
-.post-author-time {
+.post-author-date {
 	font-family: Lora,'Times New Roman',serif;
 	color: #777;
   font-size: 18px;
   font-style: italic;
-  // margin-top: 0;
 }
 
 strong {
@@ -34,4 +33,20 @@ strong {
 	text-shadow: 2px 2px 8px #1D042A;
 	text-align: center;
 	margin-bottom: 0px;
+}
+
+hr.small {
+  max-width: 100px;
+  margin: 15px auto;
+  border-width: 4px;
+  border-color: #fff;
+}
+
+textarea {
+	color: #666666;
+	width: 100%;
+	border: 1px solid #E6E6E6;
+	height: 120px;
+	margin: 6px auto;
+	text-indent: 10px;
 }

@@ -1,29 +1,31 @@
 <div class="jumbotron">
   <div class="container">
-    <%= image_tag('magic_leap_logo.png') %>
+    <div>
+      <%= image_tag('magic_leap_logo.png') %>
+    </div>
     <h1>Magic Leap Web Blog</h1>
+    <hr class="small">
     <h2>Hi there magic being!</h2>
-    <p>Consectetur adipisicing elit. Magni modi doloremque excepturi laudantium maxime explicabo cumque deleniti voluptate deserunt.</p>
   </div>
 </div>
 
 <div class="container">
-  <div class="col-sm-10 col-sm-offset-1 col-xs-12 blog-content">
+  <div class="col-sm-10 col-sm-offset-1 col-xs-12">
     <% @posts.each do |post| %>
-    <div class="col-xs-12 post">
-      <div class="text-center">
-        <h2><%= link_to post.title, post_path(post) %></h2>
-      </div>
+      <div class="col-xs-12 post">
+        <div>
+          <h2><%= link_to post.title, post_path(post) %></h2>
+        </div>
 
-      <div>
-        <p class="lead"><%= link_to raw(post.content).truncate(290), post_path(post) %></p>
-      </div>
+        <div>
+          <p class="lead"><%= link_to raw(post.content).truncate(290), post_path(post) %></p>
+        </div>
 
-      <div class="text-center post-author-time">
-        <p>Posted by <strong><%= post.username %></strong> on <%= post.created_at.strftime('%b %d, %Y') %></p>
+        <div class="post-author-date">
+          <p>Posted by <strong><%= post.username %></strong> on <%= post.created_at.strftime('%b %d, %Y') %></p>
+        </div>
+        <hr>
       </div>
-      <hr>
-    </div>
     <% end %>
   </div>
 </div>
