@@ -2,10 +2,9 @@
         
 	<%= f.text_field :title, :placeholder => "Title" %>
 	<%= f.text_area :content, :placeholder => "Content" %>
-	
 	<% if @post.id == nil %>
-		<%= f.submit "Create", class: "btn btn-danger btn-lg" %>
 		<%= f.hidden_field :unique_id, :value => @unique_id %>
+		<%= f.submit "Create", class: "btn btn-danger btn-lg" %>
 	<% else %>
 		<%= f.submit "Save", class: "btn btn-danger btn-lg" %>
 	<% end %>
