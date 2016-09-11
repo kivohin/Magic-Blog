@@ -6,12 +6,14 @@
 	    <p>Posted by <strong class="username"><%= @post.username %></strong> on <%= @post.created_at.strftime('%b %d, %Y') %></p>
 	  </div>
 
-		<div class="edit-delete-button">
-		  <% if current_user && current_user.username == @post.username %>
+		
+		<% if current_user && current_user.username == @post.username %>
+		  <div class="edit-delete-button">
 			  <a href="/posts/<%= @post.id %>/edit"><button type="button" class="btn btn-primary btn-xs">Edit</button></a>
 			  <a href="/posts/<%= @post.id %>" data-method="delete"><button type="button" class="btn btn-danger btn-xs">Delete</button></a>
-		  <% end %>
-		</div>
+			</div>
+	  <% end %>
+		
 
 	  <div class="lead"><%= @post.content %></div>
 
@@ -21,21 +23,25 @@
 
 		<h3>Comments</h3>
 		
-		<% if @all_comments != nil %>
-				<% @all_comments.each do |comment| %>
-					<div>
-	          <p class="lead"><%= comment.content %></p>
-	        </div>
+		<% if @all_comments.empty? == false %>
+			<% @all_comments.each do |comment| %>
+				<p class="lead comment"><%= comment.content %></p>
 
-					<div class="author-date">
-	          <p>Comment by <strong class="username"><%= comment.username %></strong> on <%= comment.created_at.strftime('%b %d, %Y') %></p>
-	        </div>
+				<div class="author-date">
+	          Comment by <strong class="username"><%= comment.username %></strong> on <%= comment.created_at.strftime('%b %d, %Y') %>
+	      </div>
 
-	        <hr>
-				<% end %>
+	      <% if current_user && current_user.username == comment.username %>
+				  <div class="edit-delete-button">
+					  <a href="/posts/<%= @post.id %>/comments/<%= comment.id %>" data-method="delete"><button type="button" class="btn btn-danger btn-xs">Delete</button></a>
+					</div>
+			  <% end %>
+
+				<hr>
+			<% end %>
+
 		<% else %>
-			<p>No comments yet!</p>
-			<% byebug %>
+			<p>No comments yet! Want to give your opinion? Then tell me what you think! :)</p>
 		<% end %>
 	</div>
 </div>
