@@ -2,7 +2,9 @@
   
 	<%= f.text_area :content, :placeholder => "Comment" %>
 	<%= f.hidden_field :unique_id, :value => @comment_unique_id %>
-	<%= f.hidden_field :username, :value => current_user.username %>
+	<% if current_user %>
+		<%= f.hidden_field :username, :value => current_user.username %>
+	<% end %>
 	<%= f.submit "Add comment", class: "btn btn-primary" %>
 
 <% end %>
