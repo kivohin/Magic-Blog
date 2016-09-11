@@ -18,21 +18,20 @@ a:hover {
   font-style: italic;
 }
 
-strong {
+.username {
 	color: #333;
 }
 
 .jumbotron {
 	align-items: center;
-	background-image: image-url("dionaea_trap.jpg");
+	background-image: image-url("crab_beach.jpg");
 	background-position: right;
 	background-size: cover;
 	display: flex;
 	justify-content: center;
 	color: white;
-	text-shadow: 2px 2px 8px #1D042A;
 	text-align: center;
-	margin-bottom: 0px;
+	margin-bottom: 20px;
 }
 
 hr.small {
@@ -49,4 +48,8 @@ textarea {
 	height: 120px;
 	margin: 6px auto;
 	text-indent: 10px;
+}
+
+.edit-delete-button {
+	margin-bottom: 10px;
 }

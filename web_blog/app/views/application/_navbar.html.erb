@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -20,10 +20,10 @@
         <% if current_user %>
           <li class="navbar-text"><%= current_user.email %></li>
           <a href="/posts/new"><button type="button" class="btn btn-success navbar-btn">Create post</button></a>
-          <a href="logout" data-method="delete"><button type="button" class="btn btn-danger navbar-btn">Log out</button></a>
+          <a href="/logout" data-method="delete"><button type="button" class="btn btn-danger navbar-btn">Log out</button></a>
         <% else %>
-          <a href="login"><button type="button" class="btn btn-primary navbar-btn">Log in</button></a>
-          <a href="signup"><button type="button" class="btn btn-primary navbar-btn">Sign up</button></a>
+          <a href="/login"><button type="button" class="btn btn-primary navbar-btn">Log in</button></a>
+          <a href="/signup"><button type="button" class="btn btn-primary navbar-btn">Sign up</button></a>
         <% end %>
       </ul>
     </div><!-- /.navbar-collapse -->
