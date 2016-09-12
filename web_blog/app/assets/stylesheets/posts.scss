@@ -53,3 +53,20 @@ textarea {
 .edit-delete-button {
 	margin-bottom: 10px;
 }
+
+.previous_page, .next_page {
+	display: inline-block;
+  padding: 5px 14px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.previous_page:hover, .next_page:hover {
+	display: inline-block;
+  padding: 5px 14px;
+  color: #fff;
+  background-color: #0085A1;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}

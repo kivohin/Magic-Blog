@@ -2,7 +2,7 @@ class PostsController < ApplicationController
 	before_action :require_user, except: [:index, :show]
 
 	def index
-		@posts = Post.all.order('created_at DESC')
+		@posts = Post.paginate(:page => params[:page], :per_page => 4).order('created_at DESC')
 	end
 
 	def new
@@ -25,7 +25,7 @@ class PostsController < ApplicationController
 	def show
 		@post = Post.find(params[:id])
 		@comment_unique_id = SecureRandom.uuid
-		@all_comments = Comment.where(post_id: @post.id)
+		@all_comments = Comment.where(post_id: @post.id).order('created_at ASC')
 	end
 
 	def edit

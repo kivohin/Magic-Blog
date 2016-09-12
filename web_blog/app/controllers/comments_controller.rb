@@ -4,7 +4,6 @@ class CommentsController < ApplicationController
 	def create
     @post = Post.find(params[:post_id])
     @comment = @post.comments.new(comment_params)
-    # byebug
 
     if @comment.save
     	redirect_to post_path(@post)
