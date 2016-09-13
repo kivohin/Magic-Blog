@@ -8,6 +8,13 @@ I have been able to build the app until meeting the basic requirements, using Ra
 
 - Rails 4.2.6+
 
+## Technologies
+
+- Rails (Model-View-Controller framework)
+- Ruby (Back-end)
+- HTML, CSS, Sass, Ruby (Front-end)
+- bcrypt (Password hashing algorithm, stores a secure hash of users' passwords.)
+
 ## Usage
 
 I published the assignment on Heroku, after 30 minutes of no traffic it will go in sleep mode, it will become active again after making a request, but expect a initial short delay, you can find it here:
