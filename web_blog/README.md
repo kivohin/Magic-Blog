@@ -6,7 +6,7 @@ I have been able to build the app until meeting the basic requirements, using Ra
 
 ## Requirements
 
-- Rails 4.2.6
+- Rails 4.2.6+
 
 ## Usage
 
@@ -15,8 +15,8 @@ I published the assignment on Heroku, after 30 minutes of no traffic it will go 
 https://magic-blog.herokuapp.com/
 
 However if you want to run locally you must have the following installed:
-- Rails 4.2.6
-- Ruby 2.3.0
+- Rails 4.2.6+
+- Ruby 2.3.0+
 
 By default Mac OS X already comes with Ruby pre-installed, however for Rails follow these instructions:
 
