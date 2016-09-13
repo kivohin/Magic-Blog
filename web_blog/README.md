@@ -1,7 +1,5 @@
 # Magic Leap Web Blog Assignment - Anthony Nabuurs
 
-## Overview
-
 Taking into account the amount of time I had, and since I'm at the moment more familiar with the Rails MVC Framework I decided to use the latter one. If time wasn't a concern I would have loved to dive into Sails JS MVC Framework and build the assignment with it.
 
 I have been able to build the app until meeting the basic requirements, using Rails for the app MVC's, Ruby for the back-end, and HTML, CSS, Sass for the front-end. I also used a PostgreSQL database. However I would have implemented React and the rest of the 'Nice to have' requirements if I had more time.
@@ -12,16 +10,21 @@ I have been able to build the app until meeting the basic requirements, using Ra
 
 ## Usage
 
-I published the assignment on Heroku, after 30 minutes of no traffic it will go in sleep mode, it will become active again after making a request, but expect a initial short delay, you can find it here: https://magic-blog.herokuapp.com/
+I published the assignment on Heroku, after 30 minutes of no traffic it will go in sleep mode, it will become active again after making a request, but expect a initial short delay, you can find it here:
+
+https://magic-blog.herokuapp.com/
 
 However if you want to run locally you must have the following installed:
 - Rails 4.2.6
 - Ruby 2.3.0
 
-By default Mac OS X already comes with Ruby pre-installed, however for Rails follow these instructions: https://gorails.com/setup/osx/10.11-el-capitan
+By default Mac OS X already comes with Ruby pre-installed, however for Rails follow these instructions:
+
+https://gorails.com/setup
 
 Once installed go into app folder and run:
 ```bash
+bundle install
 rails server
 ```
 
