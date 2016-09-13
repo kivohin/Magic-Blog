@@ -21,7 +21,7 @@
 	  	<%= render 'comment_form' %>
 	  </div>
 
-		<h3>Comments</h3>
+		<h3>Comments (<%= @all_comments.count %>)</h3>
 		
 		<% if @all_comments.empty? == false %>
 			<% @all_comments.each do |comment| %>
