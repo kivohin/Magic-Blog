@@ -42,7 +42,7 @@ rake db:reset
 ```
 Now start the server again.
 
-I populated the app with random made posts, and commments. And also there are a few users already available:
+I populated the app with random made posts, and comments. Also there are a few users already available:
 - Username: 'Boomy', email: 'boomy@doggy.com', password: boomy
 - Username: 'Goku', email: 'goku@saiyan.com', password: goku
 - Username: 'Elliot', email: 'elliot@hacker.com', password: elliot
