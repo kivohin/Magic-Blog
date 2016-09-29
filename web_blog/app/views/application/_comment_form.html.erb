@@ -1,6 +1,6 @@
 <%= form_for([@post, @post.comments.build]) do |f| %>
   
-	<%= f.text_area :content, :placeholder => "Comment" %>
+	<%= f.text_area :content, :placeholder => "Comment", :required => 'required' %>
 	<%= f.hidden_field :unique_id, :value => @comment_unique_id %>
 	<% if current_user %>
 		<%= f.hidden_field :username, :value => current_user.username %>

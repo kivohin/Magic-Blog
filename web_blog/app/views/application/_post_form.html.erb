@@ -1,7 +1,7 @@
 <%= form_for(@post) do |f| %>
         
-	<%= f.text_field :title, :placeholder => "Title" %>
-	<%= f.text_area :content, :placeholder => "Content" %>
+	<%= f.text_field :title, :placeholder => "Title", :required => 'required' %>
+	<%= f.text_area :content, :placeholder => "Content", :required => 'required' %>
 	<% if @post.id == nil %>
 		<%= f.hidden_field :unique_id, :value => @unique_id %>
 		<%= f.hidden_field :username, :value => current_user.username %>
