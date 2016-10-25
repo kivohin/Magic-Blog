@@ -1,8 +1,6 @@
-# Magic Leap Web Blog Assignment - Anthony Nabuurs
+# Magic Web Blog - Anthony Nabuurs
 
-Taking into account the amount of time I had, and since I'm at the moment more familiar with the Rails MVC Framework I decided to use the latter one. If time wasn't a concern I would have loved to dive into Sails JS MVC Framework and build the assignment with it.
-
-I have been able to build the app until meeting the basic requirements, using Rails for the app MVC's, Ruby for the back-end, and HTML, CSS, Sass for the front-end. I also used a PostgreSQL database. However I would have implemented React and the rest of the 'Nice to have' requirements if I had more time.
+Simple yet elegant blogging app using modern web technologies.
 
 ## Requirements
 
