@@ -46,5 +46,5 @@ I populated the app with random made posts, and comments. Also there are a few u
 - Username: 'Elliot', email: 'elliot@hacker.com', password: elliot
 - Username: 'Anakin', email: 'anakin@starwars.com', password: anakin
 
-If any problem should arise please contact me!
+If any problem should arise or have any question feel free to contact me! :)
 
